@@ -1,0 +1,113 @@
+@import '../../assets/styles/_variables.sass'
+
+.container
+  width: 100dvw
+  height: 100dvh
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  &__title
+    width: 100%
+    height: 20%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    h1
+      font-family: $bold
+      font-size: 3rem
+
+    &_one
+      color: $blue
+
+    &_two
+      color: $darkblue
+
+  &__img
+    width: 100%
+    height: 20%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &_sword
+      width: 130px
+      height: 130px
+
+  &__team
+    width: 100%
+    height: 55%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+
+    &_title
+      display: flex
+      align-items: center
+      font-family: $bold
+      font-weight: 700
+      height: 15%
+      color: $grey
+
+    &_input
+      width: 85%
+      height: 3rem
+      background: url("../../assets/img/lider-do-time 1.svg") no-repeat
+      text-indent: 3rem
+      border-width: 0 0 1px 0
+
+    &_members
+      width: 85%
+      height: calc(65% - 3rem)
+      max-height: calc(65% - 3rem)
+      min-height: calc(65% - 3rem)
+      display: flex
+      flex-direction: column
+      overflow-y: auto
+      padding: 1.5rem 0
+
+
+      &_span
+        font-family: $font
+        height: 4.5rem
+        display: flex
+        align-items: center
+
+      &_div
+        display: flex
+        width: 100%
+        height: 4rem
+        min-height: 4rem
+        align-items: center
+        gap: 1rem
+
+        input
+          width: 90%
+          height: 2.5rem
+          background: url("../../assets/img/do-utilizador 1.svg") no-repeat
+          text-indent: 3rem
+          border-width: 0 0 1px 0
+
+      &_add
+        text-align: right
+        background-color: transparent
+        border: none
+        font-family: $bold
+
+    &_register
+      width: 85%
+      height: 3.5rem
+      font-family: $bold
+      font-size: 1.2rem
+      border: none
+      border-radius: 6px
+      color: $white
+      background-color: $blue
+
+
+
+
+
+
