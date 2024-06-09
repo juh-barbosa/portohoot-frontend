@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 const Timer = () => {
   const [remainingTime, setRemainingTime] = useState(null);
   const [duration, setDuration] = useState('');
-  const socket = io('http://localhost:8000'); // Certifique-se de usar a URL correta do seu servidor
+  const socket = io('https://portohoot-backend.vercel.app/'); // Certifique-se de usar a URL correta do seu servidor
 
   // Função debounce
   const debounce = (func: { (time: any): void; (arg0: any): void; }, wait: number | undefined) => {
