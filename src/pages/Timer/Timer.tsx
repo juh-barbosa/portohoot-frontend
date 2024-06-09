@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 const Timer = () => {
   const [remainingTime, setRemainingTime] = useState(null);
   const [duration, setDuration] = useState('');
-  const socket = io('https://portohoot-backend-juhbarbosas-projects.vercel.app/'); // Certifique-se de usar a URL correta do seu servidor
+  const socket = io('https://portohoot-backend.vercel.app/'); // Certifique-se de usar a URL correta do seu servidor
 
   useEffect(() => {
     socket.on('timer-update', (time) => {
