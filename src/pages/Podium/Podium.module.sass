@@ -1,0 +1,78 @@
+@import "../../assets/styles/_variables.sass"
+
+.container
+  width: 100dvw
+  height: 100dvh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-evenly
+  background-color: $blue
+
+  &__title
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: $bold
+    font-size: 5rem
+    color: $white
+
+  &__podium
+    display: flex
+    justify-content: space-evenly
+    gap: 4rem
+    width: 80%
+    height: 60%
+
+    &_div
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-end
+      gap: 1rem
+      width: 15%
+
+      &_position
+        font-family: $bold
+        color: $white
+        font-size: 3rem
+
+      &_desc
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        gap: 1.5rem
+        padding: 1.5rem 0
+        background-color: $darkblue
+        box-shadow: 10px -10px 20px rgba(0, 255, 111, 0.53)
+
+        img
+          width: 112px
+          height: 112px
+          border-radius: 100%
+
+        span
+          font-size: 2.5rem
+          font-family: $bold
+          color: $white
+
+      &_name
+        font-family: $bold
+        font-size: 1.3rem
+        color: $white
+
+  &__developer
+    display: flex
+    justify-content: center
+    gap: 1rem
+    font-size: 1.5rem
+
+    &_one
+     font-family: $bold
+     color: $white
+
+    &_two
+      font-family: $font
+      color: $white

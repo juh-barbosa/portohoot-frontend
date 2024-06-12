@@ -37,8 +37,10 @@ export default function Team() {
             pontuacao: 0
         }).then((res) => {
             localStorage.setItem('participantes', JSON.stringify(members));
-            localStorage.setItem('nome', JSON.stringify(name));
+            localStorage.setItem('nome', name);
             localStorage.setItem('icone', res.data['icone']);
+            localStorage.setItem('_id', res.data._id);
+            localStorage.setItem('respondidas', JSON.stringify([]))
             navigate('/waiting');
         }).finally(() => {
             setIsLoading(false);

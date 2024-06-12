@@ -1,0 +1,66 @@
+@import "../../assets/styles/_variables.sass"
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100dvw
+  height: 100dvh
+
+  &__header
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 2rem
+    width: calc(100% - 2rem)
+    height: 60%
+
+    &_div
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 12rem
+
+      &_img
+        width: 160px
+        height: 160px
+
+    &_title
+      width: 100%
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      height: 5rem
+      font-family: $font
+      color: $blue
+
+      &_one
+        font-weight: 700
+        font-size: 2.5rem
+
+      &_two
+        font-weight: 700
+        font-size: 2.5rem
+
+      &_span
+        font-family: $bold
+        color: $darkblue
+
+    &_waiting
+      display: flex
+      align-items: center
+      height: 5rem
+      font-family: $font
+
+  &__footer
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 40%
+
+    &_img
+      width: 220px
+      height: 220px
